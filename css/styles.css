@@ -1,64 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Reset padrão para evitar margens/paddings inesperados e facilitar o controle de layout */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #d6e2f0;
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .card {
-    background-color: #ffffff;
-    border-radius: 20px;
-    padding: 1.3rem;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.507);
-    max-width: 300px;
-  }
-  
-  .qr-code {
-    width: 100%;
-    border-radius: 12px;
-  }
-  
-  h1 {
-    font-size: 20px;
-    color: #1f3251;
-    margin-top: 20px;
-    padding: 10 20px;
-    
-  }
-  
-  p {
-    font-size: 15px;
-    color: #68778d;
-    margin-top: 20px;
-    padding: 0 5px;
-  }
-  
-  footer {
-    margin-top: 1.5rem;
-    font-size: 12px;
-    color: #1f3251;
-    
-  }
-  
-  footer a {
-    color: #002fff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+/* Estilização do corpo da página */
+body {
+  background-color: #d6e2f0; /* fundo azul claro */
+  font-family: "Cabin", sans-serif; /* fonte escolhida */
+  font-weight: 400; /* peso normal da fonte */
+  height: 100vh; /* ocupa 100% da altura da janela de visualização */
+  display: flex; /* Flexbox para centralizar o conteúdo */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container principal que organiza os elementos em coluna e centraliza */
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo do "cartão" central */
+.card {
+  background-color: #ffffff; /* fundo branco */
+  border-radius: 20px; /* bordas arredondadas */
+  padding: 1.3rem; /* espaçamento interno */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.507); /* sombra para profundidade */
+  max-width: 300px; /* largura máxima */
+}
+
+/* Imagem do QR Code */
+.qr-code {
+  width: 100%; /* ocupa toda a largura do container pai */
+  border-radius: 12px; /* cantos arredondados */
+}
+
+/* Título principal */
+h1 {
+  font-size: 20px;
+  color: #1f3251;
+  margin-top: 20px;
+  padding: 10px 20px; /* CORRIGIDO: agora com unidades corretas (px) */
+}
+
+/* Parágrafo de descrição */
+p {
+  font-size: 15px;
+  color: #68778d;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+
+/* Rodapé da página */
+footer {
+  margin-top: 1.5rem;
+  font-size: 12px;
+  color: #1f3251;
+}
+
+/* Links no rodapé */
+footer a {
+  color: #002fff; /* azul vibrante para destaque */
+  text-decoration: none; /* remove o sublinhado padrão */
+  font-weight: bold;
+}
